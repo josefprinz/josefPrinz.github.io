@@ -30,7 +30,7 @@ url: "https://berlin-prinz.de/" # the base hostname & protocol for your site, e.
 github_username:  josefprinz
 
 # Build settings
-theme: bulma-clean-theme
+remote_theme: bulma-clean-theme
 
 paginate: 5
 paginate_path: "/blog/page:num"
