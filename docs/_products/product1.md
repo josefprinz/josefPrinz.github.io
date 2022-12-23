@@ -6,7 +6,7 @@ hero_height: is-fullwidth
 product_code: 1
 layout: product
 price: Sale by inpro
-image: /devspace/img/bild4.png
+image: /img/bild4.png
 features:
     - label: Automatic calculation of robot operation interferences
       icon: fa-location-arrow
