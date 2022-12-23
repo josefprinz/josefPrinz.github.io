@@ -8,11 +8,11 @@ show_sidebar: true
 
 # Computer Scientist by passion
 
-Hello and welcome
+Hello and Welcome
 
-My name is **Josef Prinz**. 
+My name is **Josef Prinz**
 
-I am a software developer, based in Berlin, Germany. The main focus of my programming are developments for production and automation planning in the areas of simulation, optimization and data standards. 
+I am a software developer, based in Berlin, Germany. The main focus of my programming interests are developments for production and automation planning in the areas of simulation, optimization and data standards. 
 
 This website showcases some of my favorite projects. I would like to tell something about these projects here and also talk about new ideas. 
 
@@ -25,7 +25,7 @@ This website showcases some of my favorite projects. I would like to tell someth
 
 #### GitHub Pages
 
-The website is hosted on GitHub Pages.
+This website is hosted on GitHub Pages.
 
 #### Supported By Chris Rhymes Bulma-clean-theme
 

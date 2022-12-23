@@ -6,8 +6,13 @@ show_sidebar: false
 ---
 
 
+
+
 - The website owner doesn’t steal or sell any of your data.
+
 - The site is hosted by GitHub Pages.
+
+  
 
 
 ## Access logs
