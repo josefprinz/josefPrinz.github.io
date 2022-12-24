@@ -10,6 +10,8 @@ I am in the process of learning how to use Jekyll to generate GitHub Pages.  You
 
 If you have installed Jekyll you can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
+When I tried to deploy the side to GitHub pages I got the error "side not found" for linked pages when I tried to navigate. I had to move every page in its own subdirectory to get it work. Another thing that was not noticed in the local test is the case sensitivity of links in GitHub pages. Apart from these, there were no other problems, everything else worked smoothly. 
+
 Jekyll supports blog post files, like this one.
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
