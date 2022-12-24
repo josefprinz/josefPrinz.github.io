@@ -4,7 +4,7 @@ subtitle: Implementation examples and a guided tutorial
 product_code: 3
 layout: product
 hero_height: is-fullwidth
-image: /devspace/img/importExport.png
+image: /img/importExport.png
 price: open source
 features:
     - label: Design patterns for AutomationML import and export methods	

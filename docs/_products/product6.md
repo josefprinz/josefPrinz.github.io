@@ -4,7 +4,7 @@ subtitle: UI controls to visualize AutomationML models
 product_code: 6
 layout: product
 hero_height: is-fullwidth
-image: /devspace/img/toolkit.png
+image: /img/toolkit.png
 price: open source
 features:
     - label: Reactive UI control

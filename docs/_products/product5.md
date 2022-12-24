@@ -4,7 +4,7 @@ subtitle: AutomationML Editor PlugIn Development
 product_code: 5
 layout: product
 hero_height: is-fullwidth
-image: /devspace/img/plugin.png 
+image: /img/plugin.png 
 price: open source
 features:
     - label: PlugIn Testing	in Sandbox

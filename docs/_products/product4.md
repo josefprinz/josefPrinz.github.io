@@ -4,7 +4,7 @@ subtitle: AutomationML Programming Interface
 product_code: 4
 layout: product
 hero_height: is-fullwidth
-image: /devspace/img/engine.png
+image: /img/engine.png
 price: free
 features:
     - label: Free portable .NET class library	
