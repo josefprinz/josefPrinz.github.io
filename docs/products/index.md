@@ -8,3 +8,5 @@ sort: product_code
 ---
 
 These are some of my favorite and recent development projects.
+
+Any issues about these projects can be reported to https://github.com/josefprinz/josefprinz.github.io/issues.
