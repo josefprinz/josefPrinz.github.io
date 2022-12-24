@@ -1,7 +1,6 @@
 ---
 title: AutomationML Editor
 subtitle: Edit and validate AutomationML models
-description: Edit and validate AutomationML models
 product_code: 2
 layout: product
 hero_height: is-fullwidth

@@ -1,7 +1,6 @@
 ---
 title: ginerO
 subtitle: MULTI ROBOT ENGINEERING easier, faster, better and safer!
-description: Automatic generation of interlocks for multi robot cells
 hero_height: is-fullwidth
 product_code: 1
 layout: product

@@ -9,7 +9,7 @@ show_sidebar: false
 Hello and welcome
 
 
-[![me](/devspace/img/me.png)](https://github.com/josefprinz)
+[![me](/img/me.png)](https://github.com/josefprinz)
 
 
 My name is **Josef Prinz**. 
