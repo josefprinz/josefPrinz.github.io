@@ -4,7 +4,7 @@ subtitle: Edit and validate AutomationML models
 product_code: 2
 layout: product
 hero_height: is-fullwidth
-image: /img/editor.png
+image: /img/Editor.png
 price: free
 features:
     - label: Edit and validate AutomationML models
