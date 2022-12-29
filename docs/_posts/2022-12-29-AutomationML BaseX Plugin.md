@@ -43,9 +43,9 @@ To be identified as a new plugin, the package name should be set to the package 
 
 In order for the plugin to be published and loaded by the AutomationML Editor, the following settings in the project file are important:
 
-`<EnableDynamicLoading>true</EnableDynamicLoading>
-`<PackageTags>AMLEditorPlugin; AutomationML</PackageTags>
-`<ExcludeAssets>runtime</ExcludeAssets>
+`<EnableDynamicLoading>true</EnableDynamicLoading>`
+`<PackageTags>AMLEditorPlugin; AutomationML</PackageTags>`
+`<ExcludeAssets>runtime</ExcludeAssets>`
 
 The *ExcludeAssets* is needed for all AutomationML package references which are used by the editor itself. The *PackageTags* are required, so that the package can be found.
 
