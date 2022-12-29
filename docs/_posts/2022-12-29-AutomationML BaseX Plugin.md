@@ -25,7 +25,7 @@ It is, I think, a great idea if AutomationML documents could be archived in a Ba
 
 So I will try to develop a **BaseX Editor PlugIn** and report about the progress here. 
 
-First I will install BaseX and try to store an AutomationML document in the database. The next step will be to create a simple editor plugin that makes document content from the database accessible to the AutomationML editor via a Rest-API. For the PlugIn I'll use [ASP .Net Core](https://learn.microsoft.com/en-us/aspnet/core/introduction-to-aspnet-core}view=aspnetcore-7.0). The API will be published as a free new [Aml.Engine](//https://www.nuget.org/packages/Aml.Engine) package at [NuGet.org](https://www.nuget.org). The API project will be an Open Source project at GitHub. 
+First I will install BaseX and try to store an AutomationML document in the database. The next step will be to create a simple editor plugin that makes document content from the database accessible to the AutomationML editor via a Rest-API. For the PlugIn I'll use [ASP .Net Core](https://learn.microsoft.com/en-us/aspnet/core/introduction-to-aspnet-core}view=aspnetcore-7.0). The API will be published as a free new [Aml.Engine](https://www.nuget.org/packages/Aml.Engine) package at [NuGet.org](https://www.nuget.org). The API project will be an Open Source project at GitHub. 
 
 To start with PlugIn development you first need the PlugIn development resources, which you can get from GitHub using this command.
 
