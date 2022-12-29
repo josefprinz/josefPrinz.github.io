@@ -59,4 +59,4 @@ The *ExcludeAssets* is needed for all AutomationML package references which are 
 ### 3.First plugin test
 This is all that is needed for the first executable version of the plugin. Activating the plugin in the AutomationML editor plugin sandbox application shows the result. The right toolbar is selected as the dock position.
 
-<img src="../img/AMLBaseXEmpty.png" alt="AMLBaseXEmpty" style="zoom:50%;" />	
+<img src="/img/AMLBaseXEmpty.png" alt="AMLBaseXEmpty" style="zoom:50%;" />	
