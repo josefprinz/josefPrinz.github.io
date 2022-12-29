@@ -25,7 +25,11 @@ It is, I think, a great idea if AutomationML documents could be archived in a Ba
 
 So I will try to develop a **BaseX Editor PlugIn** and report about the progress here. 
 
-First I will install BaseX and try to store an AutomationML document in the database. The next step will be to create a simple editor plugin that makes document content from the database accessible to the AutomationML editor using the BaseX Rest-API. The PlugIn will be a C# .Net implementation. For the http requests, the .Net [HttpClient Class](https://learn.microsoft.com/en-us/dotnet/api/system.net.http.httpclient?view=net-7.0) will be used, which provides methods for sending HTTP requests and receiving HTTP responses from a resource identified by a URI. The API-client will be published as a free new [Aml.Engine](https://www.nuget.org/packages/Aml.Engine) package at [NuGet.org](https://www.nuget.org). The API-client project will be an Open Source project at GitHub. 
+### 1.Step
+First I will install BaseX and try to store an AutomationML document in the database. I will report on this later.
+
+### 2.Step
+The next step will be to create a simple editor plugin that makes document content from the database accessible to the AutomationML editor using the BaseX Rest-API. The PlugIn will be a C# .Net implementation. For the http requests, the .Net [HttpClient Class](https://learn.microsoft.com/en-us/dotnet/api/system.net.http.httpclient?view=net-7.0) will be used, which provides methods for sending HTTP requests and receiving HTTP responses from a resource identified by a URI. The API-client will be published as a free new [Aml.Engine](https://www.nuget.org/packages/Aml.Engine) package at [NuGet.org](https://www.nuget.org). The API-client project will be an Open Source project at GitHub. 
 
 To start with PlugIn development you first need the PlugIn development resources, which you can get from GitHub using this command.
 
@@ -35,7 +39,14 @@ For the latest version of the editor the resources provided in the *PlugInDevelo
 
 To be identified as a new plugin, the package name should be set to the package identifier.
 
-` public override string PackageName => "Aml.Editor.Plugin.BaseX";`
+`public override string PackageName => "Aml.Editor.Plugin.BaseX";`
 
+In order for the plugin to be published and loaded by the AutomationML Editor, the following settings in the project file are important:
+
+`<EnableDynamicLoading>true</EnableDynamicLoading>
+`<PackageTags>AMLEditorPlugin; AutomationML</PackageTags>
+`<ExcludeAssets>runtime</ExcludeAssets>
+
+The *ExcludeAssets* is needed for all AutomationML package references which are used by the editor itself. The *PackageTags* are required, so that the package can be found.
 
 ​	
