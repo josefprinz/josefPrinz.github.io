@@ -22,9 +22,9 @@ This website showcases some of my favorite projects. I would like to tell someth
 
 [My GitHub profile](https://github.com/josefprinz)
 
-## Contact
+#### Contact
 
-[Josef Prinz](mailto:devspace@berlin-prinz.de)
+[mail: devspace@berlin-prinz.de](mailto:devspace@berlin-prinz.de)
 
 #### GitHub Pages
 
