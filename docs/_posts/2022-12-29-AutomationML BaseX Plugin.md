@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "AutomationML BaseX Plugin!"
+title:  "AutomationML BaseX Plugin"
 author: Josef Prinz
 hero_height: is-fullwidth
 image: /img/basex.png
@@ -9,11 +9,9 @@ categories: AutomationML
 ---
 
 ## Next Development Project
-
 AutomationML documents should be able to be archived in a BaseX database and be directly visualizable and editable via a web interface in the AutomationML Editor. An editor plugin is to be developed for this purpose.
 
 ## AutomationML
-
 [AutomationML (AML)](https://www.AutomationML.org) is a comprehensive XML based object-oriented data modeling language. It allows the modelling, storage and exchange of engineering models covering a multitude of relevant aspects of engineering. AML provides a comprehensive set of flexible mechanisms and innovations to model today’s engineering aspects as well as future engineering aspects to come. Its language characteristics allow to model existing or new domain models.
 
 ## AutomationML Editor
