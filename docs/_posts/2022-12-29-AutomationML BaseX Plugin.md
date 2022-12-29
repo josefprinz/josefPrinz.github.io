@@ -25,12 +25,17 @@ It is, I think, a great idea if AutomationML documents could be archived in a Ba
 
 So I will try to develop a **BaseX Editor PlugIn** and report about the progress here. 
 
-First I will install BaseX and try to store an AutomationML document in the database. The next step will be to create a simple editor plugin that makes document content from the database accessible to the AutomationML editor via a Rest-API. For the PlugIn I'll use [ASP .Net Core](https://learn.microsoft.com/en-us/aspnet/core/introduction-to-aspnet-core}view=aspnetcore-7.0). The API will be published as a free new [Aml.Engine](https://www.nuget.org/packages/Aml.Engine) package at [NuGet.org](https://www.nuget.org). The API project will be an Open Source project at GitHub. 
+First I will install BaseX and try to store an AutomationML document in the database. The next step will be to create a simple editor plugin that makes document content from the database accessible to the AutomationML editor using the BaseX Rest-API. The PlugIn will be a C# .Net implementation. For the http requests, the .Net [HttpClient Class](https://learn.microsoft.com/en-us/dotnet/api/system.net.http.httpclient?view=net-7.0) will be used, which provides methods for sending HTTP requests and receiving HTTP responses from a resource identified by a URI. The API-client will be published as a free new [Aml.Engine](https://www.nuget.org/packages/Aml.Engine) package at [NuGet.org](https://www.nuget.org). The API-client project will be an Open Source project at GitHub. 
 
 To start with PlugIn development you first need the PlugIn development resources, which you can get from GitHub using this command.
 
 `git clone https://github.com/AutomationML/AMLEditorPlugin.git`
 
-For the latest version of the editor the resources provided in the *PlugInDevelopment_V6*-folder are required.
+For the latest version of the editor the resources provided in the *PlugInDevelopment_V6*-folder are required. I create a copy of this folder and name the copy **Aml.Editor.Plugin.BaseX**. This will be the Plugin Identifier and the name of the new plugins namespace.  For the first version of the plugin I choose the example plugin *Aml.Editor.Plugin.Theming* as template. I copy the whole folder and name the copy *Aml.Editor.Plugin.BaseX* as well. In the copied files I have to replace the old namespace *Theming* with *BaseX* and change the project descriptions and the name of the project files as well.
+
+To be identified as a new plugin, the package name should be set to the package identifier.
+
+` public override string PackageName => "Aml.Editor.Plugin.BaseX";`
+
 
 ​	
