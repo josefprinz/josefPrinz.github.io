@@ -33,19 +33,25 @@ The next step will be to create a simple editor plugin that makes document conte
 
 To start with PlugIn development you first need the PlugIn development resources, which you can get from GitHub using this command.
 
-`git clone https://github.com/AutomationML/AMLEditorPlugin.git`
+```shell
+git clone https://github.com/AutomationML/AMLEditorPlugin.git`
+```
 
 For the latest version of the editor the resources provided in the *PlugInDevelopment_V6*-folder are required. I create a copy of this folder and name the copy **Aml.Editor.Plugin.BaseX**. This will be the Plugin Identifier and the name of the new plugins namespace.  For the first version of the plugin I choose the example plugin *Aml.Editor.Plugin.Theming* as template. I copy the whole folder and name the copy *Aml.Editor.Plugin.BaseX* as well. In the copied files I have to replace the old namespace *Theming* with *BaseX* and change the project descriptions and the name of the project files as well.
 
 To be identified as a new plugin, the package name should be set to the package identifier.
 
-`public override string PackageName => "Aml.Editor.Plugin.BaseX";`
+```c#
+public override string PackageName => "Aml.Editor.Plugin.BaseX";`
+```
 
 In order for the plugin to be published and loaded by the AutomationML Editor, the following settings in the project file are important:
 
-`<EnableDynamicLoading>true</EnableDynamicLoading>`
-`<PackageTags>AMLEditorPlugin; AutomationML</PackageTags>`
-`<ExcludeAssets>runtime</ExcludeAssets>`
+```xml
+<EnableDynamicLoading>true</EnableDynamicLoading>
+<PackageTags>AMLEditorPlugin; AutomationML</PackageTags>
+<ExcludeAssets>runtime</ExcludeAssets>
+```
 
 The *ExcludeAssets* is needed for all AutomationML package references which are used by the editor itself. The *PackageTags* are required, so that the package can be found.
 
