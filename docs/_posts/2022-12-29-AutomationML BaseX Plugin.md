@@ -56,7 +56,11 @@ In order for the plugin to be published and loaded by the AutomationML Editor, t
 
 The *ExcludeAssets* is needed for all AutomationML package references which are used by the editor itself. The *PackageTags* are required, so that the package can be found.
 
+You can find the source code in the [Aml.Editor.Plugin.BaseX GitHub Repo][Aml.Editor.Plugin.BaseX GitHub Repo].
+
 ### 3. First plugin test
 This is all that is needed for the first executable version of the plugin. Activating the plugin in the AutomationML editor plugin sandbox application shows the result. The right toolbar is selected as the dock position.
 
-<img src="/img/AMLBaseXEmpty.png" alt="AMLBaseXEmpty" style="zoom:50%;" />	
+<img src="/img/AMLBaseXEmpty.png" alt="AMLBaseXEmpty" style="zoom:50%;" />
+
+[Aml.Editor.Plugin.BaseX GitHub Repo]: https://github.com/josefprinz/Aml.Editor.Plugin.BaseX	
