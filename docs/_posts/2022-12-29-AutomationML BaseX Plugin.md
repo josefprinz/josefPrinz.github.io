@@ -30,6 +30,10 @@ First, I installed BaseX and loaded an AutomationML document - I have chosen the
 
 <img src="/img/AmlBasex.png" alt="AMLDocument in BaseX" style="zoom:50%;" />
 
+The document can also be displayed in a tree view containing all elements. The query result is highlighted. The entire scope of a selected element tree can be visualized.
+
+<img src="/img/RoleClassTree.png" alt="RoleClass Tree" style="zoom:50%;" />
+
 ### 2. Plugin development
 The next step will be to create a simple editor plugin that makes document content from the database accessible to the AutomationML editor using the BaseX Rest-API. The PlugIn will be a C# .Net implementation. For the http requests, the .Net [HttpClient Class](https://learn.microsoft.com/en-us/dotnet/api/system.net.http.httpclient?view=net-7.0) will be used, which provides methods for sending HTTP requests and receiving HTTP responses from a resource identified by a URI. The API-client will be published as a free new [Aml.Engine](https://www.nuget.org/packages/Aml.Engine) package at [NuGet.org](https://www.nuget.org). The API-client project will be an Open Source project at GitHub. 
 
