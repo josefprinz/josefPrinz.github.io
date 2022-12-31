@@ -26,7 +26,9 @@ It is, I think, a great idea if AutomationML documents could be archived in a Ba
 So I will try to develop a **BaseX Editor PlugIn** and report about the progress here. 
 
 ### 1. BaseX installation and creation of an AutomationML database
-First I will install BaseX and try to store an AutomationML document in the database. I will report on this later.
+First, I installed BaseX and loaded an AutomationML document - I have chosen the [AutomationML Cmponent](https://www.automationml.org/news/whitepaper-part-6-automationml-component/) RoleClass Library - into a database using the BaseX GUI. For this, the file extension .aml must be replaced by .xml. A TreeMap with the XML nodes is displayed. Queries can be entered via the search bar.. 
+
+<img src="/img/AmlBasex.png" alt="AMLDocument in BaseX" style="zoom:50%;" />
 
 ### 2. Plugin development
 The next step will be to create a simple editor plugin that makes document content from the database accessible to the AutomationML editor using the BaseX Rest-API. The PlugIn will be a C# .Net implementation. For the http requests, the .Net [HttpClient Class](https://learn.microsoft.com/en-us/dotnet/api/system.net.http.httpclient?view=net-7.0) will be used, which provides methods for sending HTTP requests and receiving HTTP responses from a resource identified by a URI. The API-client will be published as a free new [Aml.Engine](https://www.nuget.org/packages/Aml.Engine) package at [NuGet.org](https://www.nuget.org). The API-client project will be an Open Source project at GitHub. 
