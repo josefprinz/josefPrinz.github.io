@@ -1,8 +1,9 @@
 title: AutomationML Editor Plugin Development Series
-description: This post is part of a series all about the development of plugins for the AutomationML editor.
+description: This post is part of a series all about the development of plugins for the AutomationML Editor.
 sections:
   - label: AutomationML BaseX Plugin
     items:
       - title: Setting up the development environment for AMLBaseX
       - title: Interactions between AMLEditor and AMLBaseX
+      
 
