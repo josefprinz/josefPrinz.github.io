@@ -16,31 +16,37 @@ The AutomationML Editor uses the XML processor of the **[AutomationML Engine][Au
 BaseX is a light-weight, high-performance and scalable XML Database and an **XQuery 3.1** Processor with full support for the W3C Update and Full-Text extensions. A BaseX XML-Database can contain multiple XML-Files.  XQuery is the functional programming language you can use to read, update, or search your databases. XQuery functions use XPath expressions to select nodes within the documents of the database. 
 
 ## AutomationML Editor AMLBaseX Interaction
-The idea is that a database connection is established via the AMLBaseX plugin. At the beginning an empty AutomationML document is loaded in the editor. The main visualization for an AutomationML document in the AMLEditor is the tree view. The initialization of the tree view is possible using this XQuery by the plugin after opening the XML database.
+The idea is that a database connection is established via the AMLBaseX plugin. At the beginning an empty AutomationML document is loaded in the editor. The main visualization for an AutomationML document in the AMLEditor is the tree view. The initialization of the tree view is possible using this **FLWOR** expression as an XQuery by the plugin after opening the XML database. The part you may be unfamiliar with here is FLWOR: it's pronounced "Flower" and is an acronym for For, Let, Where, Order by and Return.
 
 ```xml
-for $node in CAEXFile/child::node()
-return <element>{$node/name()}
-<attributes>{$node/@*}</attributes>
-</element>
+<libraries>
+{
+  for $node in /CAEXFile/child::node()
+  return <element>{$node/name()}
+  <attributes>{$node/@*}</attributes>
+  </element>
+}
+</libraries>
 ```
 
-The result is a list of the child element names and their attributes of a specific CAEX file.
+Because I want to return this result to an XML parser I have to enclose the FLWOR expression in a root element, otherwise the parser will complain about a missing root element.  You have to enclose the FLWOR expression itself with curly braces in order to make it work. The result is a list of the child element names and their attributes of the CAEX file in my XML database. 
 
 ```xml
-<element>AdditionalInformation<attributes AutomationMLVersion="2.0"/></element>
-<element>InterfaceClassLib<attributes Name="AutomationMLComponentBaseICL"/></element>
-<element>InterfaceClassLib<attributes Name="AutomationMLFMIInterfaceClassLib"/></element>
-<element>InterfaceClassLib<attributes Name="AutomationMLBPRInterfaceClassLib"/></element>
-<element>InterfaceClassLib<attributes Name="AutomationMLLogicInterfaceClassLib"/></element>
-<element>InterfaceClassLib<attributes Name="AutomationMLPLCopenXMLInterfaceClassLib"/></element>
-<element>InterfaceClassLib<attributes Name="AutomationMLInterfaceClassLib"/></element>
-<element>RoleClassLib<attributes Name="AutomationMLComponentBaseRCL"/></element>
-<element>RoleClassLib<attributes Name="AutomationMLComponentStandardRCL"/></element>
-<element>RoleClassLib<attributes Name="AutomationMLFMILogicRoleClassLib"/></element>
-<element>RoleClassLib<attributes Name="AutomationMLBPRRoleClassLib"/></element>
-<element>RoleClassLib<attributes Name="AutomationMLLogicRoleClassLib"/></element>
-<element>RoleClassLib<attributes Name="AutomationMLBaseRoleClassLib"/></element>
+<libraries>
+    <element>AdditionalInformation<attributes AutomationMLVersion="2.0"/></element>
+    <element>InterfaceClassLib<attributes Name="AutomationMLComponentBaseICL"/></element>
+    <element>InterfaceClassLib<attributes Name="AutomationMLFMIInterfaceClassLib"/></element>
+    <element>InterfaceClassLib<attributes Name="AutomationMLBPRInterfaceClassLib"/></element>
+    <element>InterfaceClassLib<attributes Name="AutomationMLLogicInterfaceClassLib"/></element>
+    <element>InterfaceClassLib<attributes Name="AutomationMLPLCopenXMLInterfaceClassLib"/></element>
+    <element>InterfaceClassLib<attributes Name="AutomationMLInterfaceClassLib"/></element>
+    <element>RoleClassLib<attributes Name="AutomationMLComponentBaseRCL"/></element>
+    <element>RoleClassLib<attributes Name="AutomationMLComponentStandardRCL"/></element>
+    <element>RoleClassLib<attributes Name="AutomationMLFMILogicRoleClassLib"/></element>
+    <element>RoleClassLib<attributes Name="AutomationMLBPRRoleClassLib"/></element>
+    <element>RoleClassLib<attributes Name="AutomationMLLogicRoleClassLib"/></element>
+    <element>RoleClassLib<attributes Name="AutomationMLBaseRoleClassLib"/></element>
+</libraries>
 ```
 
 The result contains all library elements and their attributes. This initializes the document in the editor. The information is sufficient to display the root elements of the library trees. The next tree levels are retrieved in a similar way by queries when the parent elements are expanded.
