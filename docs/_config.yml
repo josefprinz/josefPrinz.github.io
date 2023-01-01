@@ -45,7 +45,14 @@ collections:
     show_sidebar: false
 
 plugins:
+  - jekyll-feed  
+  - jekyll-paginate
   - jekyll-feed
+  - jekyll-seo-tag
+  - kramdown-parser-gfm
+  - jekyll-redirect-from
+  
+ 
 
 # Exclude from processing.
 # The following items will not be processed, by default.
