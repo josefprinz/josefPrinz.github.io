@@ -55,6 +55,12 @@ public async Task<IEnumerable<DatabaseInfo>> Connect(string address, string user
 }
 ```
 
+In order to query the result XDocument, the XML element names defined by BaseX must be converted to an XName by adding the BaseX namespace::
+
+```c#
+private static XName Name(string tagName) => "{http://basex.org/rest}" + tagName;
+```
+
 The final goal is to have a working BaseX application so that we can create, manage and query AutomationML XML databases, from anywhere on this planet. Therefore it is needed, to deploy the BaseX Database and server. I will cover this topic in a later blog post.
 
 ## AMLBaseX Client
@@ -81,7 +87,7 @@ public class AMLDatabaseService : IAMLService
 }
 ```
 
-The BaseX server can manage multiple databases with multiple XML resources (documents). The AMLBaseX service can initially only query the contents of a single database and a single document. The database and document reference must be included in the XQuery expressions. The result of this query is a list of attributes of the root element CAEXFile of the addressed AutomationML document *AssetAdministrationShellLib.aml* in the *AutomationML* database.
+The BaseX server can manage multiple databases with multiple XML resources (documents). The AMLBaseX service will initially only query the contents of a single database and a single document. The database and document reference must be included in the XQuery expressions. The result of this query is a list of attributes of the root element CAEXFile of the addressed AutomationML document *AssetAdministrationShellLib.aml* in the *AutomationML* database.
 
 ```xquery
 {doc('AutomationML/AssetAdministrationShellLib.aml')/CAEXFile/@*}
