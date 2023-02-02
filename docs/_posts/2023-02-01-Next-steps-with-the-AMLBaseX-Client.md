@@ -30,7 +30,7 @@ return
 </country>
 ```
 
-The inserted XML elements, <country>, <name> and <provinces> ensure that the result can be read by an XML parser. To post this query using REST the query must be embedded in an XML format:
+The inserted XML elements, `<country>, <name> and <provinces>` ensure that the result can be read by an XML parser. To post this query using REST the query must be embedded in an XML format:
 
 ```xml
 <query xmlns="http://basex.org/rest">
