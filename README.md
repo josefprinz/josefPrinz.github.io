@@ -1,4 +1,4 @@
-# My Projects
+# Software projects
 
 This repository is used to publish some of my favorite projects and products. I use GitHub pages to create the content in https://josefprinz.github.io. 
 
